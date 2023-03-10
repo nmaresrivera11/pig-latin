@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Patua+One&display=swap");
 
+* {
+  font-family: "Fugaz One", cursive;
+  text-align: center;
+}
+
 header {
   font-size: 55px;
   font-weight: 600;
@@ -7,24 +12,22 @@ header {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: "Fugaz One", cursive;
 }
 
 footer {
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
-  font-family: "Fugaz One", cursive;
   color: #ecf4f3;
   padding: 1rem;
   position: absolute;
-  width: 100%;
   left: 0;
-  right: 0;
+  width: 100%;
+  margin-top: 64px;
 }
 
 body {
-  margin: 1rem;
-  font-family: "Fugaz One", cursive;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -32,7 +35,6 @@ button {
   border-radius: 0.9rem;
   padding: 1rem;
   border-color: #071a52;
-  font-family: "Fugaz One", cursive;
   color: #071a52;
 }
 
@@ -46,10 +48,8 @@ button {
   border-radius: 0.5rem;
   height: 5rem;
   width: 50%;
-  text-align: center;
   margin-bottom: 1rem;
   color: #071a52;
-  font-family: "Fugaz One", cursive;
   font-size: large;
 }
 
@@ -86,7 +86,6 @@ button {
     height: auto;
     width: auto;
     padding: 1rem;
-    text-align: center;
   }
 
   .userInput {
@@ -94,6 +93,5 @@ button {
     height: 5rem;
     width: 90%;
     padding: 1rem;
-    text-align: center;
   }
 }
