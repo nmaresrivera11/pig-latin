@@ -6,7 +6,7 @@
 }
 
 header {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 600;
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
   color: transparent;
@@ -20,8 +20,8 @@ footer {
   padding: 1rem;
   position: absolute;
   left: 0;
-  width: 100%;
-  margin-top: 64px;
+  width: 100vw;
+  margin-top: 68px;
 }
 
 body {
@@ -46,7 +46,7 @@ button {
 
 .userInput {
   border-radius: 0.5rem;
-  height: 5rem;
+  height: 3rem;
   width: 50%;
   margin-bottom: 1rem;
   color: #071a52;
@@ -58,11 +58,11 @@ button {
   color: #fff;
   border-radius: 0.5rem;
   padding: 1rem;
-  height: auto;
+  height: 228px;
   width: 650px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-size: large;
 }
 
@@ -83,14 +83,13 @@ button {
 
   .inputArea {
     font-size: auto;
-    height: auto;
     width: auto;
     padding: 1rem;
   }
 
   .userInput {
     font-size: 1rem;
-    height: 5rem;
+    height: 3rem;
     width: 90%;
     padding: 1rem;
   }
