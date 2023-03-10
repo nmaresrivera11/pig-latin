@@ -1,12 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Sriracha&display=swap");
+/* sriracha */
 
 * {
-  font-family: "Fugaz One", cursive;
   text-align: center;
 }
 
+.user-input,
+.input-area,
+.output,
+footer,
+button {
+  font-family: "Sriracha", cursive;
+}
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 header {
-  font-size: 55px;
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
   font-weight: 600;
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
   color: transparent;
@@ -17,17 +36,15 @@ header {
 footer {
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
   color: #ecf4f3;
-  padding: 1rem;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  margin-top: 64px;
+  padding: 10px;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+a {
+  color: #ecf4f3;
+}
+
+a:hover {
+  color: #006a71;
 }
 
 button {
@@ -38,37 +55,53 @@ button {
   color: #071a52;
 }
 
-.butcherPig {
-  width: 12rem;
+.butcher-pig {
+  width: 16rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  animation: slide-in 7000ms;
+  animation-iteration-count: 1;
 }
 
-.userInput {
+.user-input {
   border-radius: 0.5rem;
-  height: 5rem;
-  width: 50%;
+  height: 3rem;
+  width: 80%;
   margin-bottom: 1rem;
   color: #071a52;
-  font-size: large;
+  font-size: x-large;
 }
 
-.inputArea {
+.input-area {
   background-color: #006a71;
   color: #fff;
   border-radius: 0.5rem;
-  padding: 1rem;
-  height: auto;
-  width: 650px;
+  height: 230px;
+  width: 34rem;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-size: large;
 }
 
 .output {
-  font-size: x-large;
-  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(400%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-400%);
+    opacity: 0.5;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -83,14 +116,13 @@ button {
 
   .inputArea {
     font-size: auto;
-    height: auto;
     width: auto;
     padding: 1rem;
   }
 
   .userInput {
     font-size: 1rem;
-    height: 5rem;
+    height: 3rem;
     width: 90%;
     padding: 1rem;
   }

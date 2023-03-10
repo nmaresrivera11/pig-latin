@@ -1,16 +1,16 @@
 const Input = (props) => {
   return (
     <>
-      <div className="inputArea">
-        <h2>Enter phrase to be translated:</h2>
+      <div className="input-area">
+        <h2>Enter a phrase to be translated:</h2>
         <input
           type="text"
           placeholder="Enter text here"
-          className="userInput"
+          className="user-input"
           onChange={props.handleInput}
           value={props.phrase}
         />
-        <br />
+
         <button onClick={props.setUpPreventDefault}>Submit</button>
         <button onClick={props.restartGame}>Clear</button>
       </div>
