@@ -5,7 +5,6 @@ import Header from "./components/Header"
 import Input from "./components/Input"
 import Directions from "./components/Directions"
 import Pig from "./components/Pig"
-// import butcherPig from "./assets/butcherPig.png"
 
 const App = () => {
   const [userInput, setUserInput] = useState("")
@@ -82,19 +81,21 @@ const App = () => {
 
   return (
     <>
-      <Header />
-      <div>
-        <Pig />
-        <Directions />
-        <Input
-          handleInput={handleInput}
-          phrase={userInput}
-          setUpPreventDefault={setUpPreventDefault}
-          restartGame={restartGame}
-          phraseTranslated={inputTranslated}
-        />
+      <div className="body">
+        <Header />
+        <main>
+          <Pig />
+          <Directions />
+          <Input
+            handleInput={handleInput}
+            phrase={userInput}
+            setUpPreventDefault={setUpPreventDefault}
+            restartGame={restartGame}
+            phraseTranslated={inputTranslated}
+          />
+        </main>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }

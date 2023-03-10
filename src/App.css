@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 header {
   font-size: 50px;
   font-weight: 600;
@@ -17,17 +27,15 @@ header {
 footer {
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
   color: #ecf4f3;
-  padding: 1rem;
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  margin-top: 68px;
+  padding: 10px;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+a {
+  color: #ecf4f3;
+}
+
+a:hover {
+  color: #006a71;
 }
 
 button {
