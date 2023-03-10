@@ -3,7 +3,7 @@ import { Card, CardText } from "reactstrap"
 const Directions = () => {
   return (
     <>
-      <div className="directions">
+      <div className="input-area">
         <Card>
           <CardText>
             Welcome to Pig Latin Translator!

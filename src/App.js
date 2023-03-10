@@ -64,7 +64,7 @@ const App = () => {
 
   // ACTION ITEM: this method restarts the game by setting the original state, when you are ready for your full user experience delete the test words in setUserInput and pass an empty string
   const restartGame = () => {
-    setUserInput("Please enter a phrase to be translated")
+    setUserInput("")
     setInputTranslated("")
   }
 

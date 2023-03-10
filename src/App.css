@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Sriracha&display=swap");
+/* sriracha */
 
 * {
-  font-family: "Fugaz One", cursive;
   text-align: center;
+}
+
+.user-input,
+.input-area,
+.output,
+footer,
+button {
+  font-family: "Sriracha", cursive;
 }
 
 .body {
@@ -16,6 +24,7 @@ main {
 }
 
 header {
+  font-family: "Indie Flower", cursive;
   font-size: 50px;
   font-weight: 600;
   background-image: linear-gradient(to left, #68b0ab, #ff7e67);
@@ -46,28 +55,30 @@ button {
   color: #071a52;
 }
 
-.butcherPig {
-  width: 12rem;
+.butcher-pig {
+  width: 16rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  animation: slide-in 7000ms;
+  animation-iteration-count: 1;
 }
 
-.userInput {
+.user-input {
   border-radius: 0.5rem;
   height: 3rem;
-  width: 50%;
+  width: 80%;
   margin-bottom: 1rem;
   color: #071a52;
-  font-size: large;
+  font-size: x-large;
 }
 
-.inputArea {
+.input-area {
   background-color: #006a71;
   color: #fff;
   border-radius: 0.5rem;
-  padding: 1rem;
-  height: 228px;
-  width: 650px;
+  height: 230px;
+  width: 34rem;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -75,8 +86,22 @@ button {
 }
 
 .output {
-  font-size: x-large;
-  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(400%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-400%);
+    opacity: 0.5;
+  }
 }
 
 @media only screen and (max-width: 650px) {

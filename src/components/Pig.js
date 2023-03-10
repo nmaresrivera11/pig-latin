@@ -5,7 +5,7 @@ const Pig = () => {
       <img
         src={logoPath}
         alt="pig with butcher cut names in pig latin"
-        className="butcherPig"
+        className="butcher-pig"
       />
     </>
   )
