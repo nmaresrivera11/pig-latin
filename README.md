@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+🐷 Pig Latin Activity
+Oday ouyay eakspay igpay atinlay?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this activity we're going to create an application that translates regular English words into Pig Latin.
 
-## Available Scripts
+💬 Rules of Pig Latin
+For words beginning with a vowel, add "way" to the end.
+For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
+"y" is treated like a vowel in appropriate circumstances.
+There are many examples of Pig Latin translators out there on the internet to give you inspiration.
 
-In the project directory, you can run:
+▶️ Getting started
+This is a very difficult problem to solve. Take the time to plan your approach and brainstorm with your team.
 
-### `yarn start`
+This project is going to utilize React for the UI and the JavaScript logic. There is already some code inside the React application that will provide a UI for the Pig Latin project. Your job is to create the logic. All the code you'll need to write for this app is going to be inside one function in the /src/App.js file.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you accept the assignment from GitHub Classroom, you'll want to install all the necessary dependencies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+$ cd pig-latin-challenge
+$ yarn
+Then you are ready to start a server to run the application.
 
-### `yarn test`
+$ yarn start
+Now you're ready to code!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started, find the myPigLatinCodeHere function, and write your code. Every time you save your updated file, the browser window displaying your app will reload.
 
-### `yarn build`
+🐽 Pig Latin Challenge
+Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statement, we at LEARN Academy have you covered. Our development team has been tasked with creating a Pig Latin translator application. This app will take regular English words and covert them to Pig Latin. With this application you will eakspay igpay atinlay uentlyflay in no time!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🏔 Stretch Challenges
+As a user, I can input a sentence that includes lower and upper case words.
+As a user, I can see a message if I am not using the application correctly.
+👩‍💻 Developer Stretch Challenges
+As a developer, I have a well commented application.
+As a developer, I have well written README file with instructions on how to access my repository.
+As a developer, my variables are all named semantically.
+As a developer, I have refactored and efficient code.
+As a developer, I have my application deployed as a live website.

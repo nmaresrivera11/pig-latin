@@ -55,11 +55,30 @@ const App = () => {
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
+
     const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
 
-    // NO MODIFICATION NEEDED: this will update the inputTranslated variable in state
-    setInputTranslated(translatedWords)
+    const movePunctuationToEnd = (str) => {
+      // Create arrays to store the characters and punctuation
+      let characters = []
+      let punctuation = []
+
+      // Loop through each character in the string
+      for (let i = 0; i < str.length; i++) {
+        // Check if the character is punctuation
+        if (/[^\w\s]/.test(str[i])) {
+          punctuation.push(str[i]) // If so, add it to the punctuation array
+        } else {
+          characters.push(str[i]) // If not, add it to the characters array
+        }
+      }
+      return characters.join("") + punctuation.join("")
+    }
+
+    const finalProduct = movePunctuationToEnd(translatedWords)
+
+    setInputTranslated(finalProduct)
   }
 
   // ACTION ITEM: this method restarts the game by setting the original state, when you are ready for your full user experience delete the test words in setUserInput and pass an empty string
